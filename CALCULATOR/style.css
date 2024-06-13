@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.calculator {
+    width: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #333;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.display {
+    background-color: #222;
+    color: white;
+    text-align: right;
+    padding: 20px;
+    font-size: 2.5em;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button {
+    background-color: #333;
+    border: 1px solid #444;
+    color: white;
+    font-size: 1.5em;
+    padding: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+.button:active {
+    background-color: #555;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button.zero {
+    grid-column: span 2;
+    border-radius: 25px; /* Adjusted for larger button */
+}
+
+.operator {
+    background-color: #f09a36;
+    color: white;
+}
+
+.operator:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+.operator:active {
+    background-color: #d87b24;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
